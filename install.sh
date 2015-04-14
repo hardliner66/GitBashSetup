@@ -25,3 +25,6 @@ fi
 . $HOME/.bashrc
 echo type show_key to print your public key to the console
 echo type get_key to print your public key and copy it to the clipboard
+
+read -p "Please restart Git Bash..."
+kill -HUP $PPID
