@@ -15,9 +15,12 @@ file="$HOME/.ssh/id_rsa"
 if [ -f "$file" ]
 then
  echo key already exists, skipping...
+ sleep 1
 else
  echo when prompted, enter password, key name can stay the same
  ssh-keygen -t rsa
 fi
 . $HOME/.profile
 . $HOME/.bashrc
+echo type show_key to print your public key to the console
+echo type get_key to print your public key and copy it to the clipboard

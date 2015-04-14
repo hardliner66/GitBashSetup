@@ -1,0 +1,5 @@
+#!/bin/sh
+KEY="$(show_key)"
+echo $KEY
+echo $KEY | clip
+echo your key was copied to the clipboard
